@@ -27,9 +27,12 @@
           <label for="female">Female</lable><br/>
           <input type="radio" id="other" name="the_gender" value="o"/>
           <label for="other">Other</lable><br/></p>
-        <p>Date Of Birth: </p>
-        <p>Contact Number: </p>
-        <p>Alternate Contact Number: </p>
+        <p><label class="question"> Date Of Birth: </label><br/>
+          <input type="date" id="bday" name="the_bday" max="2008-1-1"/></p>
+        <p><label class="question"> Contact Number: </label><br/>
+          <input type="number" id="contactPrimary" name="contact" min="7000000000" max="9999999999"/></p>
+        <p><label class="question"> Alternate Contact Number: </label><br/><br/>
+          <input type="number" id="contactAlt" name="contact" min="7000000000" max="9999999999"/></p>
         <p><lable for="state"><label class="question">State: </label><br/>
           <select id="state" name="state">
             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -73,8 +76,15 @@
     <br/>
     <fieldset>
       <legend>Set Your Password!</legend>
-        <p>Enter password: </p>
-        <p>Confirm password: </p>
+        <p><span class="question">Enter password: </span>
+          <input type="password" id="pswd" name="the_password"/></p>
+        <p><span class="question">Confirm password: </span>
+          <input type="confirm" id="conf" name="final_password"/></p>
     </fieldset>
+    <div id="buttons">
+      <input type="submit" value="Submit"/> or
+      <input type="reset" value="Reset"/>
+    </div>
+  </form>
 </body>
 </html>
